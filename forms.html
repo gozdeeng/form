@@ -1,0 +1,43 @@
+<!-- formlar veri giris alanlarini kapsayici bir yapi
+ <input /> veri giris alani etiketi,
+input etiketlerini paragraf etiketi icerisinde sayfada daha
+duzenli durmasi icin verdik bu duzenlemeler aslinda css 
+ile yapilir,radio da iki secenegi birden secilmesini istemedigimizde inputa name veririz,
+multiple name oldugunda birden fazla option secilebilir -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VakifBank</title>
+  </head>
+  <body>
+    <form>
+      <p>Ad: <input type="text" /></p>
+      <p>Soyad: <input type="text" /></p>
+      <p>E-posta: <input type="email" /></p>
+      <p>Parola: <input type="password" /></p>
+      <p>Parolayi Hatirla <input type="checkbox" /></p>
+      <p>
+        Cinsiyetiniz: <br>
+       Erkek <input type="radio" name="gender"></p>
+       Kadın <input type="radio" name="gender"></p>
+       <p>
+        Hobileriniz: <br>
+        Kitap okumak <input type="checkbox" name="hobi">
+        Film izlemek <input type="checkbox" name="hobi">
+        Spor yapmak <input type="checkbox" name="hobi">
+       </p>
+       <p>
+        Doğum Yeriniz: <br>
+        <select multiple name="dogumyeri">
+          <option>Eskişehir</option>
+          <option>İstanbul</option>
+          <option>Ankara</option>
+        </select>
+
+       </p>
+    </form>
+  </body>
+</html>
